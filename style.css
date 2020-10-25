@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Noto Sans SC", sans-serif;
+  font-size: 20px;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+}
+.s1 {
+  background-color: rgb(233, 233, 233);
+}
+.box {
+  position: relative;
+  left: 30%;
+  top: 30%;
+  height: 80%;
+  width: 80%;
+  transform: translate(-30%, -30%);
+}
+.f1 {
+  position: absolute;
+  left: 0%;
+  top: 12.5%;
+  animation: mymove 3s infinite;
+  animation-timing-function: ease-in-out;
+}
+h1 {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 7em;
+  font-weight: 300;
+  color: rgb(128, 128, 128);
+}
+
+@keyframes mymove {
+  50% {
+    left: 52%;
+  }
+}
